@@ -5,112 +5,104 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./CSS/style.css">
 
-    <title>Inicio</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-
-    <header class="encabezado">
-        <div>
-            <img src="" alt="Logo">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li>Cocteles
-                    <ul>
-                        <li><a href="./Paginas/lista.html">Lista</a> </li>
-                        <li><a href="./Paginas/sitiosBogota.html">Sitios Bogotá</a> </li>
-                        <li><a href="./Paginas/historia.html">Historia</a></li>
-                    </ul>
-                </li>
-                <li><a href="./Paginas/contactenos.html">Contactenos</a></li>
-            </ul>
-        </nav>
-        <div class="banner">
-
-            <div class="textoBanner">
-                <h1>El sitio donde te explicamos como hacer cocteles de forma sencilla</h1>
+    <header>
+        <div class="barraNav">
+            <div class="logo">
+                <img class="imgLogo" src="./img/Logo-12.svg" alt="Logo">
             </div>
-            <div class="imagenBanner">
-                <img src="./Imagenes/imagen-gris-una-imagen.jpg" alt="Banner">
+            <nav class="navBar">
+                <ul class="menu">
+                    <li> <a class="lista" href="#">Inicio</a> </li>
+                    <li><a class="lista" href="">Cocteles</a>
+                        <ul class="contenedorSubLista">
+                            <li><a class="subLista">Cocteles</a></li>
+                            <li> <a class="subLista" href="./Paginas/lista.html">Lista</a></li>
+                            <li> <a class="subLista" href="./Paginas/sitiosBogota.html">Sitios Bogota</a></li>
+                            <li> <a class="subLista" href="./Paginas/historia.html">Historia</a></li>
+                        </ul>
+                    </li>
+                    <li> <a class="lista" href="./Paginas/contactenos.html">Contactenos</a> </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="banner">
+            <div class="textoBanner ">
+                El sitio donde te explicamos como hacer cocteles de forma sencilla
             </div>
         </div>
     </header>
+
     <main>
 
-        <section class="section-mostrar-recetas">
-            <div class="textoSectionRecetas">
-                <h1>Has cocteles de forma sencilla con ingredientes que tines en casa</h1>
+        <section class="seccionInfo">
+            <div class="textoSeccionInfo  textoSeccion">
+                Has cocteles de forma sencilla con ingredientes que tienes en casa
             </div>
-            <div class="imagenMostrarRecetas">
-                <img src="./Imagenes/imagen-gris-una-imagen.jpg" alt="imagen-background">
-                <button>Quiero saber más</button>
-            </div>
-        </section>
-        <section class="section-inicio-sitiosBogota">
-
-            <div>
-                <img src="" alt="imagen-amigos-bebiendo">
-
-            </div>
-            <div>
-                <div>
-                    <h1>Conoce Sitios en Bogotá para tomar unos buenos cocteles</h1>
-                </div>
-                <div>
-                    <button>Quiero saber más</button>
-                </div>
+            <div class="contenedorBtnSeccionInfo">
+                <button class="btnTransparenciaOscuro bordesRedondos">Quiero saber más</button>
             </div>
         </section>
-        <section class="section-inicio-galeria">
-            <div>
-                <hr>
-                <h3>-------</h3>
-                <hr>
-            </div>
-            <div class="galeria">
-                <div>
-                    <img src="./Imagenes/imagen-gris-una-imagen.jpg" alt="imagen-coctel">
+        <section class="seccionInfo2 ">
+            <div class="contenidoInfo2 bordesRedondos">
+                <div class="textoInfo2">
+                    Conoce sitios en Bogotá para tomar unos buenos cocteles
                 </div>
-                <div><img src="./Imagenes/imagen-gris-una-imagen.jpg" alt="imagen-coctel"></div>
-                <div><img src="./Imagenes/imagen-gris-una-imagen.jpg" alt="imagen-coctel"></div>
-                <div><img src="./Imagenes/imagen-gris-una-imagen.jpg" alt="imagen-coctel"></div>
-                <div><img src="./Imagenes/imagen-gris-una-imagen.jpg" alt="imagen-coctel"></div>
+                <div class="botonInfo2 ">
+                    <button class="btnTransparenciaOscuro bordesRedondos">Quiero saber más</button>
+                </div>
+            </div>
+            <div class="imagenInfo2 bordesRedondos"></div>
+        </section>
+        <section class="galeria">
+            <div class="imagen1Galeria">
+                <!-- <video class="video" src="https://carontestudio.com/img/f4.mp4" autoplay="true" muted="true" loop="true"
+                    poster="https://carontestudio.com/img/contacto.jpg"></video> -->
+            </div>
+            <div class="imagen2Galeria"></div>
+            <div class="imagen3Galeria"></div>
+            <div class="imagen4Galeria"></div>
+            <div class="imagen5Galeria">
+                <video class="video" src="./videos/tomando.mp4" autoplay="true" muted="true" loop="true"
+                    poster="./img/galeria-coctel-1.jpg"></video>
             </div>
         </section>
     </main>
+
     <footer>
-        <div>
-            <h2>Contenido</h2>
-            <ul>
-                <li>Inicio</li>
-                <li>Cocteles
-                    <ul>
-                        <li>Lista</li>
-                        <li>Sitios Bogotá</li>
-                        <li>Historia</li>
-                    </ul>
-                </li>
-                <li>Contactenos</li>
-            </ul>
-            <h2>Nuestras Redes</h2>
-            <div>
-                <img src="" alt="Logo - Instagram">
-                <img src="" alt="Logo - Facebook">
-                <img src="" alt="Logo - Whatsapp">
+        <div class="contenedorMenuFooter">
+            <div class="logoFooter">
+                <img class="imgLogoFooter" src="./img/Logo-12.svg" alt="Logo">
+            </div>
+            <div class="menuFooter">
+                <ul class="contentedorListaFooter">
+                    <li> <a class="listaFooter" href="#">Inicio</a> </li>
+                    <li><a class="listaFooter" href="">Cocteles</a>
+                        <ul class="contenedorSubListaFooter">
+                            <li> <a class="subListaFooter" href="./Paginas/lista.html">Lista</a></li>
+                            <li> <a class="subListaFooter" href="./Paginas/sitiosBogota.html">Sitios Bogota</a></li>
+                            <li> <a class="subListaFooter" href="./Paginas/historia.html">Historia</a></li>
+                        </ul>
+                    </li>
+                    <li> <a class="listaFooter" href="./Paginas/contactenos.html">Contactenos</a> </li>
+                </ul>
+                <div class="listaRedes">
+                    <div><img class="red" src="./img/instagram-2.svg" alt="Instagram"></div>
+                    <div><img class="red" src="./img/facebook.svg" alt="Facebook"></div>
+                    <div><img class="red" src="./img/whatsapp.svg" alt="Whatsapp"></div>
+                </div>
             </div>
         </div>
-        <div>
-            <img src="./Imagenes/imagen-gris-una-imagen.jpg" alt="imagen-Cocteles">
-        </div>
+        <div class="imagenFooter"></div>
     </footer>
 </body>
 
