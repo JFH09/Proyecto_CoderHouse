@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 } 
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap');
+
 ::-webkit-scrollbar {
     display: none;
 }
@@ -17,35 +20,15 @@ header{
     flex-flow: column;
     width: 100%;
     height: 100vh;
-
 }
 
 .barraNav{
     width: 100%;
     height: 90px;
-    /* background-color: rgb(255, 255, 255); */
-
- 
-
-    /* background: #948E99;  
-background: -webkit-linear-gradient(to left, #2E1437, #948E99);  
-background: linear-gradient(to left, #2E1437, #948E99);  */
-
-
-    /* background: #8e9eab;  
-    background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  
-    background: linear-gradient(to right, #eef2f3, #8e9eab);  */
-    
- /* background: #000000; 
-background: -webkit-linear-gradient(to right, #434343, #000000);  
-background: linear-gradient(to right, #434343, #000000);   */
-
-background: #1F1C2C;  
-background: -webkit-linear-gradient(to right, #2b273d, #2b273d);  
-background: linear-gradient(to right, #2d293d, #2b273d); 
-  
-
-display: flex;
+    background: #1F1C2C;  
+    background: -webkit-linear-gradient(to right, #2b273d, #2b273d);  
+    background: linear-gradient(to right, #2d293d, #2b273d); 
+    display: flex;
     flex-flow: row;
     position: fixed;
     border-radius: 0px 0px 20px 20px;
@@ -56,13 +39,11 @@ display: flex;
 .imgLogo{
     width: 70%;
     height: 75%;
-  
 }
 
 .logo{
     width: 100%;
     height: 100%;
-    background-color: rgba(127, 255, 212, 0);
     text-align: left;
     margin-top: 5px;
 }
@@ -72,10 +53,8 @@ display: flex;
     width: 100%;
     height: 100%;
     position: relative;
-    background-color: rgba(165, 42, 42, 0);
     justify-content: space-between;
     align-content: center;
-    
 }
 
 .menu{
@@ -83,7 +62,7 @@ display: flex;
     list-style: none;
     flex-direction: row;
     justify-content: space-evenly;
-     margin-top: 30px;    
+    margin-top: 30px;    
 }
 
 .subLista{
@@ -93,6 +72,7 @@ display: flex;
     padding: 5px;
     text-align: left;
 }
+
 .lista{
     text-decoration: none;
     color: rgb(255, 255, 255);
@@ -102,7 +82,7 @@ display: flex;
     text-decoration: underline;
 }
 
- .contenedorSubLista{
+.contenedorSubLista{
     color: rgba(253, 0, 0, 0); 
     background-color: rgba(36, 4, 150, 0);
     margin-top: -19px;
@@ -119,16 +99,16 @@ display: flex;
     background-color: #2d293d; 
 } 
 
-
 .subLista{
     color: rgba(0, 0, 0, 0); 
     background-color: rgba(1, 133, 116, 0);
     margin-top: 2px;
     margin-bottom: 5px;
-   margin-left: -5px;
+    margin-left: -5px;
     padding: 0px 10px 10px 10px ;
     text-decoration: none;
 }
+
 .subLista:hover{
     color: rgb(255, 255, 255);  
     background-color: #2d293d; 
@@ -144,7 +124,7 @@ display: flex;
     border-radius: 0px 0px 20px 20px;
     background-image: url("../img/cocteles-banner-inicio.jpg"); 
     background-size: cover;
-    filter: brightness(70%);
+    filter: brightness(95%);
 }
 
 .contenedorTextoBanner{
@@ -166,8 +146,6 @@ display: flex;
     transform: translate(-50%, -50%);
     font-size: xx-large;
     margin-right: 20%;
-
-    
 }
 
 .imgBanner{
@@ -175,16 +153,15 @@ display: flex;
     border-radius: 0px 0px 20px 20px;
     filter: brightness(50%);
 }
+
 .imagenBanner{
     width: 100%;
     align-self: center;
 }
 
-
-
 main{
     width: 90%;
-    /* height: 275vh; */
+    height: 315vh;
     margin-top: 5%;
     display: grid;
     grid-template-columns: 1fr;
@@ -196,16 +173,11 @@ main{
 
 .seccionInfo{
     width: 100%;
-    /* height: 80vh; */
+    height: 80vh;
     grid-column: auto;
     grid-row: 1;
-    /* background-color: brown; */
-    /* background-image: url("../img/terminando-coctel.gif");  */
     border-radius: 20px;
-    /* background-size: cover;
-    background-position: center; */
     z-index: -1;
-    /* filter: brightness(70%); */
     display: grid;
     grid-template-columns: repeat(10,1fr);
     grid-template-rows: repeat(3,1fr);
@@ -232,21 +204,16 @@ main{
     grid-row: 2;
     grid-column: 3 / 9;
     width: 100%;
-    /* margin: 5px; */
 }
 
 .seccionInfo :nth-child(3){
     grid-row: 3;
     grid-column: 4 / 8;
-    /* width: 100%; */
-    /* margin: 5px; */
 }
-
-
 
 .seccionInfo2{
     width: 100%;
-    /* height: 100%; */
+    height: 80vh;
     background-color: rgba(0, 30, 128, 0);
     display: grid;
     grid-template-columns: repeat(4,0.5fr);
@@ -287,15 +254,9 @@ main{
     transform: translate(-50%, -50%);  
 }
 
-
 .contenidoInfo2{
     grid-row: 1 / 5;
     grid-column: 1 / 4;
-    /* background-image: url("../img/Gente-bebiendo.jpg"); */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 85%;
-    /* filter: brightness(65%); */
     z-index: -1;
     display: flex;
     flex-flow: column;
@@ -320,27 +281,21 @@ main{
     margin-right: 40%;
     text-align: center;
     position: relative;
-    top: 15%;
+    top: 27%;
     font-size: xx-large;
 }
-
 
 .botonInfo2{
     margin-right: 40%;
     text-align: center;
     position: relative;
-    top: 20%;
+    top: 30%;
     font-size: xx-large;
-
 }
 
 .imagenInfo2{
     grid-row: 1 / 5;
     grid-column: 3 / 5;
-    /* background-image: url(../img/luciendo-coctel_AdobeExpress.gif); */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     width: 100%;
     height: 100%;
     border-radius: 20px;
@@ -442,7 +397,7 @@ footer{
     height: 100%;
     display: flex;
     flex-flow: row;
-    /* margin-top: 13px; */
+    margin-top: 13px;
 }
 
 .contenedorMenuFooter{
@@ -500,8 +455,6 @@ footer{
     margin-left: 10%;
     width: 50%;
     height: 100%;
-
-
 }
 
 .listaRedes div img:hover{
@@ -521,15 +474,10 @@ footer{
 
 .red{
     width: 45%;
-  
-  
 }
 
 @media  (max-width:360px){
     header{
-        /* width: 100%;
-        height: 50%; 
-        background-color: rgb(255, 255, 255); */
         display: flex;
         flex-flow: column;
         height: 94vh;
@@ -538,7 +486,6 @@ footer{
     .logo{
         width: 100%;
         height: 100%;
-        background-color: rgba(127, 255, 212, 0);
     }
 
     .imgLogo{
@@ -552,10 +499,7 @@ footer{
         width: 100%;
         height: 19%;
     }
-    /* .navBar{
-        margin-right: 10px;
-        margin-left: auto;
-    } */
+
     .menu{
         margin-top: 0%;
         margin-left: 8px;
@@ -573,18 +517,20 @@ footer{
         height: 100%;
     }
 
-    .main{
+    .textoBanner{
+        top: 58%;
+        font-size: 24px;
+        margin-right: 0%;
+    }
+
+    body main{
         grid-gap: 2%;
+        height: 365vh;
     }
     .seccionInfo{
         height: 94%;
 
     }
-
-    /* .textoSeccionInfo{
-        font-size: x-larger;
-        
-    } */
 
     .textoSeccion{
         font-size: 25px;
@@ -593,17 +539,42 @@ footer{
         top: 20%;
     }
 
-
     .seccionInfo2{
         height: 100%;
     }
 
+    .seccionInfo :nth-child(2) {
+        grid-row: 2;
+        grid-column: 2 / 10;
+        margin-right: 0px;
+    }
+
+    .seccionInfo :nth-child(3) {
+        grid-row: 3;
+        grid-column: 3 / 9;
+        margin-top: 8px;
+    }
     .contenidoInfo2{
         grid-column: 1 / 5;
         grid-row: 1 / 5;
         background-size: cover;
         background-position: center;
-        filter: brightness(40%);
+    }
+
+    .seccionInfo2 :nth-child(1){
+        grid-row: 1 / 5;
+        grid-column: 1 / 5  ;
+        width: 100%;
+    }
+
+    .seccionInfo2 :nth-child(2){
+        grid-row: 1 / 4;
+        grid-column: 1 / 5;
+        margin:auto;
+    }
+    .seccionInfo2 :nth-child(3){
+        grid-row: 4 / 8;
+        grid-column: 2 / 6;
     }
 
     .textoInfo2{
@@ -645,9 +616,6 @@ footer{
 
 @media  (max-width:560px){
     header{
-        /* width: 100%;
-        height: 50%; 
-        background-color: rgb(255, 255, 255); */
         display: flex;
         flex-flow: column;
         height: 94vh;
@@ -671,10 +639,7 @@ footer{
         width: 100%;
         height: 25%;
     }
-    /* .navBar{
-        margin-right: 10px;
-        margin-left: auto;
-    } */
+
     .menu{
         margin-top: 0%;
         margin-left: 8px;
@@ -692,12 +657,12 @@ footer{
         height: 100%;
     }
 
-    .main{
+    main{
         grid-gap: 2%;
-        
+        height: 480vh;
     }
     .seccionInfo{
-        /* height: 94%; */
+        height: 60vh;
     }
 
     .contenedorBtnSeccionInfo{
@@ -705,7 +670,7 @@ footer{
     }
 
     .seccionInfo2{
-        /* height: 100%; */
+        height: 60vh;
     }
 
     .contenidoInfo2{
@@ -713,22 +678,15 @@ footer{
         grid-row: 1 / 5;
         background-size: cover;
         background-position: center;
-        filter: brightness(40%);
-    }
-
-    .textoInfo2{
-        margin-right: 0%;
-        font-size: 23px;
     }
 
     .botonInfo2{
         margin-right: 0%;
-        /* margin-top: 26%; */
     }
 
     .galeria{
         margin-top: 0%;
-        /* height: 80%; */
+        height: 80%;
         display: grid;
         grid-template-columns: repeat(4,1fr);
         grid-template-rows: repeat(4,0.5fr);
@@ -738,15 +696,16 @@ footer{
         grid-column: 1 / 3;
         grid-row: 1 / 2;
         object-fit: cover;
-        border-radius: 0px;
     }
     
+    .img2{
+        border-radius: 0px 20px 0px 0px
+    }
     .galeria :nth-child(2){
         grid-column: 3 / 5;
         grid-row: 1 / 2;
         object-fit: cover;
         height: 100%;
-        /* border-top-right-radius: 20px; */
     }
 
     .galeria :nth-child(4){
@@ -773,12 +732,13 @@ footer{
     .video{
         width: 100%;
         object-fit: cover;
+        border-radius: 0px 0px 20px 20px;
     }
 
     footer{
         background-image: url('../img/imagen-footer-1.jpg');
         background-size: cover;
-        height: 50%;
+        height: 80%;
         background-position: center;
         filter: brightness(55%)
     }
@@ -803,35 +763,53 @@ footer{
     }
 
     .menu li:nth-child(2){
-        /* padding-left: 5px; */
         margin-left: 16px;
     }
 
     .textoSeccion{
         font-size: 30px;
     }
+
     .seccionInfo2{
         gap: 3%;
+        height: 90vh;
         grid-template-columns: repeat(5,0.5fr);
-        grid-template-rows: repeat(5,0.5fr);
+        grid-template-rows: repeat(7,0.5fr);
     }
     .contenidoInfo2{
         grid-row: 1 / 4;
-        grid-column: 1 / 5;
+        grid-column: 1 / 4;
         background-size: cover;
     }
     
     .textoInfo2{
         margin-right: 0%;
+        top: 15%;
+        font-size: 23px;
+
     }
     .botonInfo2{
         margin-right: 0%;
+        margin-top: 30px;
+        top: 0%;
     } 
     
     .imagenInfo2{
-        grid-row: 3 / 6;
-        grid-column: 2 / 6;
+        grid-row: 4 / 8;
+        grid-column: 3 / 6;
         background-position: center;
     }
 
+}
+
+@media  (max-width:1440px) {
+    main{
+        height: 360vh;
+    }
+}
+
+@media  (max-width:2560px) {
+    main{
+        height: 360vh;
+    }
 }
