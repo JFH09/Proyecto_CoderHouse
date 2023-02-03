@@ -6,33 +6,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
 </head>
 
 <body>
     <header>
-        <nav>
-            <img src="" alt="Logo">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li>Cocteles
-                    <ul>
-                        <li><a href="./lista.html">Lista</a></li>
-                        <li><a href="./sitiosBogota.html">Sitios Bogotá</a></li>
-                        <li><a href="./historia.html">Historia</a></li>
-                    </ul>
-                </li>
-                <li><a href="./contactenos.html">Contactenos</a></li>
-            </ul>
-        </nav>
-
-        <section class="banner">
-            <div class="imagen-bannerLista">
-                <img src="../Imagenes/imagen-gris-una-imagen.jpg" alt="banner-lista">
+        <div class="barraNav">
+            <div class="logo">
+                <img class="imgLogo" src="../img/Logo-12.svg" alt="Logo">
             </div>
-            <div class="bannerLista">
-                <h2>Texto Banner Vista - Lista</h2>
+            <nav class="navBar">
+                <ul class="menu">
+                    <li> <a class="lista" href="../index.html">Inicio</a> </li>
+                    <li><a class="lista" href="">Cocteles</a>
+                        <ul class="contenedorSubLista">
+                            <li><a class="subLista">Cocteles</a></li>
+                            <li> <a class="subLista" href="./lista.html">Lista</a></li>
+                            <li> <a class="subLista" href="./sitiosBogota.html">Sitios Bogota</a></li>
+                            <li> <a class="subLista" href="./historia.html">Historia</a></li>
+                        </ul>
+                    </li>
+                    <li> <a class="lista" href="./contactenos.html">Contactenos</a> </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="banner">
+            <div class="textoBanner ">
+                El sitio donde te explicamos como hacer cocteles de forma sencilla
             </div>
-        </section>
+        </div>
     </header>
     <main>
         <section class="contenedor-cards">

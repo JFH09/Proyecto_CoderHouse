@@ -1,0 +1,81 @@
+.barraNav{
+	width: 100%;
+    height: 90px;
+    background: #1F1C2C;  
+    background: -webkit-linear-gradient(to right, $colorPrincipal, $colorPrincipal);  
+    background: linear-gradient(to right, $colorPrincipal, $colorPrincipal); 
+    display: flex;
+    flex-flow: row;
+    position: fixed;
+    border-radius: 0px 0px 20px 20px;
+    align-self: center;
+    z-index: 5;
+	div{
+		width: 100%;
+		height: 100%;
+		text-align: left;
+		margin-top: 5px;
+		img{
+			width: 70%;
+			height: 75%;
+		}
+	}
+	nav{
+		width: 100%;
+		height: 100%;
+		position: relative;
+		justify-content: space-between;
+		align-content: center;
+		ul{
+			display: flex;
+			list-style: none;
+			flex-direction: row;
+			justify-content: space-evenly;
+			margin-top: 30px;   
+			li {
+				a{
+					text-decoration: none;
+					color: rgb(255, 255, 255);
+				}
+				a:hover{
+					text-decoration: underline;
+				} 	
+				ul{
+					color: $colorTransparente; 
+					background-color: $colorTransparente;
+					margin-top: -26px;
+					list-style: none;
+					justify-content: center;
+					align-items: center;
+					width: 100%;
+					height: 115%;
+					padding: 0px 10px 10px 0px;
+					display: flex;
+					flex-direction: column;
+					margin-left: -18px;
+					margin-right: 18px;
+
+					li{
+						a{
+						color: $colorTransparente; 
+						background-color: $colorTransparente;
+						margin-top: 2px;
+						margin-bottom: 5px;
+						margin-left: -5px;
+						padding: 0px 10px 10px 10px ;
+						text-decoration: none;
+						margin-left: 2px;
+						}
+						a:hover{
+							color: rgb(255, 255, 255);  
+							background-color: $colorPrincipal; 
+						}
+					}	
+				}	
+				ul:hover{
+					background-color: $colorPrincipal;
+				}
+			}	
+		}
+	}
+}
