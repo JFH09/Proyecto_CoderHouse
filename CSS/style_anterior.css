@@ -109,6 +109,14 @@ header{
     text-decoration: none;
 }
 
+/* .subLista{
+    background-color: #2d293d; 
+    list-style: none;
+    margin: 5px;
+    padding: 5px;
+    text-align: left;
+} */
+
 .subLista:hover{
     color: rgb(255, 255, 255);  
     background-color: #2d293d; 
