@@ -1,0 +1,48 @@
+@media  (max-width:768px){
+
+    body{
+        background-color: rgb(102, 34, 3);
+    }
+    .imgLogo{
+        margin-left: 0px;
+    }
+
+    .menu li:nth-child(2){
+        margin-left: 16px;
+    }
+
+    .textoSeccion{
+        font-size: 30px;
+    }
+
+    .seccionInfo2{
+        gap: 3%;
+        height: 90vh;
+        grid-template-columns: repeat(5,0.5fr);
+        grid-template-rows: repeat(7,0.5fr);
+    }
+    .contenidoInfo2{
+        grid-row: 1 / 4;
+        grid-column: 1 / 4;
+        background-size: cover;
+    }
+    
+    .textoInfo2{
+        margin-right: 0%;
+        top: 15%;
+        font-size: 23px;
+
+    }
+    .botonInfo2{
+        margin-right: 0%;
+        margin-top: 30px;
+        top: 0%;
+    } 
+    
+    .imagenInfo2{
+        grid-row: 4 / 8;
+        grid-column: 3 / 6;
+        background-position: center;
+    }
+
+}
