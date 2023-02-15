@@ -5,35 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <meta name="description" content="Aprende hacer cocteles facil con ingredientes de casa">
+    <meta name="keywords" content="cocteles, ingredientes, aprende, facil">
+    <meta name="author" content="Julian Florez">
+
+
+    <meta property="og:title" content="Cocteles">
+    <meta property="og:site_name" content="Cocktails">
+    <meta property="og:url" content="">
+    <meta property="og:description" content="Has cocteles de manera facil con ingredientes de casa">
+    <meta property="og:type" content="">
+    <meta property="og:image" content="./img/galeria-coctel-2.jpg">
+
+    <title>Cocktails</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 
     <link rel="stylesheet" href="./CSS/styles.css">
-    <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.0/firebase-app.js";
-        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.0/firebase-analytics.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
-        // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-        const firebaseConfig = {
-          apiKey: "AIzaSyAsv0Af24wdEQ7zd-k-KgoGFrh6lU0tS8E",
-          authDomain: "cocktails-e7b8f.firebaseapp.com",
-          projectId: "cocktails-e7b8f",
-          storageBucket: "cocktails-e7b8f.appspot.com",
-          messagingSenderId: "487805951393",
-          appId: "1:487805951393:web:b192ab4031b169e8d67fe0",
-          measurementId: "G-YYH45C6778"
-        };
-      
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-        const analytics = getAnalytics(app);
-      </script>
+    <script src="./js/conexionFirebase.js"></script>
 </head>
 
 <body>
@@ -59,9 +51,9 @@
                 </ul>
             </nav>
         </div>
-        <div class="banner">
+        <div class="bannerInicio">
             <div class="textoBanner ">
-                El sitio donde te explicamos como hacer cocteles de forma sencilla
+                <span class="textoBanner1"></span>
             </div>
         </div>
     </header>
@@ -97,20 +89,33 @@
         </section>
         <section class="galeria">
             <div class="imagen1Galeria">
-                <img class="img1" src="./img/galeria-coctel-amigos.jpg" alt="galeria-coctel-amigos">
+                <img class="img1 imgG" src="./img/galeria-coctel-amigos.jpg" alt="galeria-coctel-amigos">
             </div>
             <div class="imagen2Galeria">
-                <img class="img2" src="./img/galeria-coctel-2.jpg" alt="galeria-coctel-2">
+                <img class="img2 imgG" src="./img/galeria-coctel-2.jpg" alt="galeria-coctel-2">
             </div>
             <div class="imagen3Galeria">
-                <img class="img3" src="./img/galeria-coctel-3-2.jpg" alt="galeria-coctel-3">
+                <img class="img3 imgG" src="./img/galeria-coctel-3-2.jpg" alt="galeria-coctel-3">
             </div>
             <div class="imagen4Galeria">
-                <img class="img4" src="./img/galeria-coctel-4.jpg" alt="galeria-coctel-4">
+                <img class="img4 imgG" src="./img/galeria-coctel-4.jpg" alt="galeria-coctel-4">
             </div>
             <div class="imagen5Galeria">
-                <video class="video" src="./videos/bebiendo.mp4" autoplay="true" muted="true" loop="true"
+                <!-- <video class="video" src="./videos/bebiendo.mp4" autoplay="true" muted="true" loop="true"
                     poster="./img/galeria-coctel-1.jpg" alt="video-bebiendo-buen-coctel"></video>
+                    -->
+
+                <!-- 
+                <iframe width="560" height="315" src="https://youtu.be/1cpOapME8nc?t=10" title=" video player"
+                    frameborder="0" autoplay="true" muted="true" loop="true"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe> -->
+                <iframe class="video"
+                    src="https://www.youtube.com/embed/1cpOapME8nc?autoplay=1&controls=0&loop=1&playlist=1cpOapME8nc"
+                    autolplay muted controls playsinline title="Bebiendo Buen Coctel" frameborder="0" autoplay="true"
+                    muted="true" loop="true"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+
             </div>
         </section>
     </main>
