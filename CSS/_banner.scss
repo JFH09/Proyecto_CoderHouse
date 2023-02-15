@@ -1,0 +1,40 @@
+@mixin banner ($bannerImagen, $bannerTexto, $opacidad){
+    height: 100vh; 
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    z-index: -1;
+    border-radius: 0px 0px 20px 20px;
+    background-image: url($bannerImagen); 
+    background-size: cover;
+    background-attachment: fixed;
+    // filter: brightness($brightness);
+    opacity: $opacidad;
+    div{
+		color: white;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		position: relative;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-size: xx-large;
+		// margin-right: 20%;
+        margin-right: 42%;
+        .textoBanner1::before{
+            content: $bannerTexto;
+        }
+	}
+}
+
+
+.bannerInicio{
+    @include banner('../img/cocteles-banner-inicio.jpg', 'El sitio donde te explicamos como hacer cocteles de forma sencilla',95%);
+    
+}
+
+.bannerLista{
+    @include banner('../img/fondoLista.gif', 'Tenemos una lista de cocteles que te van a interersar como hacer y que tienes que probar',70%);
+    
+}

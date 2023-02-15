@@ -1,0 +1,194 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+    width: 100%;
+}
+
+.bodyLista{
+    width: 100%;
+}
+.mainLista{ 
+        display : flex;
+        align-items : center;
+        justify-content : center;
+        width: 100%;
+        height: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+        //background-color: #2b273d65;
+    .card{
+        position: relative;
+        width: 600px;
+        height: 350px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        transition: 0.5s;
+        .tituloCards{
+            font-size: xx-large;
+            color: #fff;
+            align-self: flex-start;
+            margin-left: 7%;
+        }
+    }
+}
+
+
+.card .circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.card .circle::before{
+    content: '';
+    position: absolute;
+    // top: -12%;
+    // left: -11%;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: #24243e;
+    clip-path: circle(120px at center);
+    transition: 0.5s;
+}
+
+.card:hover .circle::before{
+    background: #0f0c29;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #24243e, #242150, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #24243e, #242150, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    clip-path: circle(400px at center);
+    top: 0%;
+    left: 0%;
+}
+
+.card img{
+    position: absolute;
+    // top: 58%;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    // height: 300px;
+    height: 100%;
+    pointer-events: none;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.card:hover img{
+    left: 78%;
+    top: 29%;
+    height: 133%;
+}
+
+.card .content{
+    position: relative;
+    width: 50%;
+    left: 20%;
+    padding: 20px 20px 20px 40px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.card:hover .content{
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.card .content h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2em;
+    line-height: 1em;
+    margin-bottom: 5px;
+
+}
+
+.card .content h3{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1em;
+    margin-bottom: 10px;
+    font-weight: 700;
+
+}
+
+.card .content p{
+    color: #fff;
+
+}
+
+
+
+.card .content .videoCoctel{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    border-radius: 20px;
+    left: 0px;
+    margin-top: 5%;
+    z-index: 4;
+    transition: 0.5s;
+}
+.card:hover .tituloCards{
+    display: none;
+
+}
+
+.card:hover .videoCoctel{
+    width: 200%;
+    transition: 0.5s;
+}
+.videoCoctel{
+    iframe{
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+    }
+}
+
+@media (max-width:525px){
+    .mainLista{ 
+        display : flex;
+        align-items : center;
+        justify-content : center;
+        width: 100%;
+        height: 100%;
+        //background-color: #2b273d65;
+        .card{
+            position: relative;
+            width: 90%;
+            height: 350px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            transition: 0.5s;
+            margin: 5%;
+        }
+    }
+    .mainLista{
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .card .content{
+        left:0%;
+    }
+
+    .card:hover img{
+        height: 70%;
+    }
+
+}
