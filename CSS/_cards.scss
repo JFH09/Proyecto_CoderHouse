@@ -1,0 +1,147 @@
+@mixin card(){
+        position: relative;
+        width: 600px;
+        height: 350px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        transition: 0.5s;
+        .tituloCards{
+            font-size: xx-large;
+            color: #fff;
+            align-self: flex-start;
+            margin-left: 7%;
+        }
+        .circle{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            overflow: hidden;
+            z-index: -1;
+        }
+        .circle::before{
+            content: '';
+            position: absolute;
+            // top: -12%;
+            // left: -11%;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            background: #24243e;
+            // background: #0f0c29;  
+            // background: -webkit-linear-gradient(to right, #24243e, #242150, #0f0c29); 
+            // background: linear-gradient(to right, #24243e, #242150, #0f0c29); 
+            clip-path: circle(120px at center);
+            transition: 0.5s;
+        }
+        .content{
+            position: relative;
+            width: 50%;
+            left: 20%;
+            padding: 20px 20px 20px 40px;
+            transition: 0.5s;
+            opacity: 0;
+            visibility: hidden;
+            h2{
+                color: #fff;
+                text-transform: uppercase;
+                font-size: 2em;
+                line-height: 1em;
+                margin-bottom: 5px;
+            }
+            h3{
+                color: #979797;
+                text-transform: uppercase;
+                font-size: 1em;
+                margin-bottom: 10px;
+                font-weight: 700;
+            }
+            p{
+                color: #fff;
+            }
+            .videoCoctel{
+                position: absolute;
+                width: 50%;
+                height: 100%;
+                border-radius: 20px;
+                left: 0px;
+                margin-top: 5%;
+                z-index: 4;
+                transition: 0.5s;
+                iframe{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 20px;
+                }
+            }
+        }
+        img{
+            position: absolute;
+            // top: 58%;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            // height: 300px;
+            height: 100%;
+            pointer-events: none;
+            transition: 0.5s;
+            z-index: -1;
+        }
+    
+    
+    
+    &:hover {
+        .circle::before{
+            background: #0f0c29;  
+            background: -webkit-linear-gradient(to right, #24243e, #242150, #0f0c29); 
+            background: linear-gradient(to right, #24243e, #242150, #0f0c29); 
+            clip-path: circle(400px at center);
+            top: 0%;
+            left: 0%;
+        }
+        .tituloCards{
+            display: none;
+        }
+        .content{
+            left: 0;
+            opacity: 1;
+            visibility: visible;
+            .videoCoctel{
+                width: 200%;
+                transition: 0.5s;
+            }
+        }
+        img{
+            left: 78%;
+            top: 29%;
+            height: 133%;
+        }
+    }
+    
+}
+
+.card1{
+    @include card();
+    /*
+    Para las variables en card1:
+
+    tituloCards: Coctel Margarita
+    h2: Coctel Margarita
+    h3: Refrescante
+    p: la lista de ingredientes /: 
+    podria ser que por cada coctel el circle cambiara de bkground...
+    lo mismo seria para el card...
+
+
+
+
+
+
+    Para las variables en card1:HOVER :
+    
+    */
+}
