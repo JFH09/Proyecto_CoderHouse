@@ -158,7 +158,9 @@
 
 
   Para las variables en card1:HOVER :
-
+  el top 
+  height de la img del coctel...
+  padding-bottom del content...s
   */
 }
 .card1 .tituloCards {
@@ -212,8 +214,9 @@
   margin-bottom: 10px;
   font-weight: 700;
 }
-.card1 .content p {
+.card1 .content ul {
   color: #fff;
+  list-style-type: decimal;
 }
 .card1 .content .videoCoctel {
   position: absolute;
@@ -255,6 +258,11 @@
   left: 0;
   opacity: 1;
   visibility: visible;
+  padding-bottom: 90px;
+}
+.card1:hover .content h2 {
+  margin: 0%;
+  top: 0%;
 }
 .card1:hover .content .videoCoctel {
   width: 200%;
@@ -262,8 +270,8 @@
 }
 .card1:hover img {
   left: 78%;
-  top: 29%;
-  height: 133%;
+  top: 25%;
+  height: 109%;
 }
 
 * {
