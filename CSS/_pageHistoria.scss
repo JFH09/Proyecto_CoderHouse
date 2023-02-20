@@ -1,0 +1,111 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.btnBanner{
+color: #fff;
+    
+}
+
+.btnBanner2{
+    color: #fff;
+    position: relative;
+    justify-self: center;
+    align-self: center;
+    top:45%
+}
+.contenedorHistoria{
+    width: 100%; 
+    // background-color: #fff;
+    color: black;
+    margin: 0;
+    display: block;
+}
+
+.contenidoHistoria{
+    height: 650px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 40px;
+    align-items: center;
+    //margin-top: 20%;
+    // .contenedorTexto{
+    //     margin-top: 10%;
+    // }
+    h2{
+        font-size: 50px;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+    p{
+        font-weight: 8px;
+        margin-bottom: 3px;
+    }
+    img{
+        width: 100%;
+        height: 60%;
+    }
+    a{
+        display: inline-block;
+        padding: 5px 0;
+        color: black;
+        text-decoration: none;
+        width: 100px;
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 50px;
+        background-color: #fff;
+    }
+}
+
+section:nth-child(2){
+    img{
+        width: 45%;
+    }
+}
+
+section:nth-child(2){
+    margin-top: 0%;
+    img{
+        width: 100%;
+        // height: auto;
+        object-fit: contain;
+    }
+}
+
+section:nth-child(1){
+    color: #fff;
+   //  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    //  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+   // background-image: url('../img/fondo1.jpg');
+   background: #0f0c29;  
+   background: -webkit-linear-gradient(to right, #24243e, #242150, #0f0c29); 
+   background: linear-gradient(to right, #24243e, #242150, #0f0c29); 
+  
+    //  img{
+    //      height: 95%;
+    //  }
+}
+
+section:nth-child(2){
+    color: #fff;
+     // background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+      //background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    //  background-image: url('../img/fondo3.jpg');
+    background-image: linear-gradient(to top, #f3c4a4 0%, #dba884 100%);
+    a{
+        border: #fff;
+    }
+    img{
+        height: 100%;
+    }
+}
+
+ section:nth-child(3){
+    color: #fff;
+    //  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+     //  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+     background-image: url('../img/fondo2.jpg');
+     background-size: auto;
+     
+ }
