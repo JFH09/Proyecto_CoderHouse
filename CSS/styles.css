@@ -136,7 +136,7 @@
 
 .card1 {
   position: relative;
-  width: 600px;
+  width: 95%;
   height: 350px;
   border-radius: 20px;
   display: flex;
@@ -280,11 +280,16 @@
   box-sizing: border-box;
 }
 
-html {
+.bodyLista {
   width: 100%;
 }
 
-.bodyLista {
+.barraNav {
+  left: 0px;
+  right: 0px;
+}
+
+.bannerLista {
   width: 100%;
 }
 
@@ -297,6 +302,7 @@ html {
   margin-left: 0%;
   margin-right: 0%;
   flex-direction: column;
+  overflow: scroll;
 }
 .mainLista h1 {
   margin: 2%;
@@ -312,33 +318,44 @@ html {
   color: #fff;
 }
 .mainLista .contenedorCards {
+  width: 100%;
+  padding: 10px;
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: repeat(2, 1fr);
 }
 
-@media (max-width: 525px) {
+@media (max-width: 768px) {
+  body .videoBody {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
   .mainLista {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     width: 100%;
     height: 100%;
   }
   .mainLista .contenedorCards {
+    width: 100%;
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: repeat(1, 1fr);
   }
   .mainLista .contenedorCards .card {
     position: relative;
-    width: 90%;
+    width: 95%;
     height: 350px;
     border-radius: 20px;
     display: flex;
     align-items: center;
     transition: 0.5s;
     margin: 5%;
+  }
+  .mainLista .contenedorCards .card1 {
+    width: 89%;
   }
   .mainLista {
     margin-left: 0%;
@@ -349,6 +366,65 @@ html {
   }
   .card:hover img {
     height: 70%;
+  }
+}
+@media (max-width: 525px) {
+  header div:nth-child(2) {
+    top: 5%;
+  }
+  .mainLista .contenedorCards {
+    width: 80%;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .mainLista .contenedorCards .card {
+    position: relative;
+    width: 100%;
+    height: 380px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+    margin: 5%;
+  }
+  .mainLista .contenedorCards .card1 {
+    width: 90%;
+  }
+  .mainLista .contenedorCards .card1 h2 {
+    font-size: 1em;
+  }
+  .mainLista .contenedorCards .card1 h3 {
+    font-size: small;
+  }
+  .mainLista .contenedorCards .card1 ul {
+    font-size: small;
+  }
+  .mainLista .contenedorCards .card1 img {
+    width: 65%;
+  }
+}
+@media (max-width: 360px) {
+  header div:nth-child(2) {
+    top: 10%;
+  }
+  .card1 {
+    overflow: scroll;
+  }
+  .card1 .content {
+    width: 100%;
+  }
+  .card1 .content .videoCoctel {
+    width: 50%;
+  }
+  .card1 img {
+    width: 100%;
+  }
+  .card1:hover .content .videoCoctel {
+    width: 100%;
+  }
+  .card1:hover img {
+    opacity: 40%;
   }
 }
 * {
