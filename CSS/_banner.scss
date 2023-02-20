@@ -38,3 +38,8 @@
     @include banner('../img/fondoLista.gif', 'Tenemos una lista de cocteles que te van a interersar como hacer y que tienes que probar',70%);
     
 }
+
+.bannerHistoria{
+    @include banner('../img/fondoHistoria.gif', 'Conoce un poco de la historia de los cocteles con este pequeño resumen',70%);
+    
+}

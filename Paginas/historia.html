@@ -5,72 +5,214 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Historia</title>
+
+    <link rel="stylesheet" href="../CSS/styles.css">
 </head>
 
 <body>
     <header>
-        <nav>
-            <img src="" alt="Logo">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li>Cocteles
-                    <ul>
-                        <li><a href="./lista.html">Lista</a></li>
-                        <li><a href="./sitiosBogota.html">Sitios Bogotá</a></li>
-                        <li><a href="#">Historia</a></li>
-                    </ul>
-                </li>
-                <li><a href="./contactenos.html">Contactenos</a></li>
-            </ul>
-        </nav>
+        <div class="barraNav">
+            <div class="logo">
+                <img class="imgLogo" src="../img/Logo-12.svg" alt="Logo">
+            </div>
+            <nav class="navBar">
+                <ul class="menu">
+                    <li> <a class="lista" href="../index.html">Inicio</a> </li>
+                    <li><a class="lista" href="">Cocteles</a>
+                        <ul class="contenedorSubLista">
+                            <li><a class="subLista">Cocteles</a></li>
+                            <li> <a class="subLista" href="./lista.html">Lista</a></li>
+                            <li> <a class="subLista" href="./sitiosBogota.html">Sitios Bogota</a></li>
+                            <li> <a class="subLista" href="./historia.html">Historia</a></li>
+                        </ul>
+                    </li>
+                    <li> <a class="lista" href="./contactenos.html">Contactenos</a> </li>
+                </ul>
+            </nav>
+        </div>
+        <div id="bannerHistoria" class="bannerHistoria">
+            <div class="textoBanner ">
+                <span class="textoBanner1"> </span>
+
+            </div>
+            <a class="btnBanner2" href="#sec1">- Leer Resumen - </a>
+        </div>
+
     </header>
-    <main class="contenedor-historia">
-        <div>
+
+    <main class="contenedorHistoria">
+        <!-- <div>
             <h2>Origen de los Cocteles</h2>
-        </div>
-        <section>
-            <article class="texto-historia1">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quidem nam fugit eum quos vero repellat
-                    delectus, quae unde recusandae, mollitia ut autem minus. Fugit fuga nam nemo repellat veniam.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident eos iusto necessitatibus quidem
-                    quibusdam, eum iste tenetur aliquid unde at nostrum! Libero aperiam error odit cumque quia maiores
-                    placeat sed.</p>
-            </article>
-            <div>
-                <img src="../Imagenes/imagen-gris-una-imagen.jpg" alt="imagen-historia-coctel">
+        </div> -->
+        <section class="contenidoHistoria" id="sec1">
+            <div class="contenedorTexto">
+                <h2>Un poco de historia</h2>
+                <article>
+                    <p>La historia de los cócteles es larga y compleja. Aunque no hay un consenso universal sobre el
+                        origen
+                        exacto de los cócteles, la palabra "cóctel" parece tener su origen en la cultura anglosajona.
+                        Según
+                        una teoría, la palabra "cóctel" proviene de la práctica de colocar un gallo de pelea (en inglés
+                        "cock") en la bebida del perdedor, para humillarlo. Otra teoría sugiere que la palabra "cóctel"
+                        se
+                        deriva del francés "coquetier", que significa "copita para huevos", que se utilizaba para servir
+                        bebidas mezcladas.</p>
+                    <br>
+                    <p>Sea cual sea su origen, lo cierto es que los cócteles han evolucionado a lo largo de los años. En
+                        la
+                        década de 1800, las bebidas mixtas se volvieron cada vez más populares en los Estados Unidos y
+                        en
+                        Europa, con la aparición de bares especializados en cócteles y la creación de nuevas bebidas.
+                    </p>
+                    <br>
+                    <p>En general, los cócteles se han convertido en una forma de arte en la que los bartenders mezclan
+                        ingredientes cuidadosamente seleccionados y utilizan técnicas especializadas para crear bebidas
+                        deliciosas y elegantes. Y aunque la historia de los cócteles puede ser difícil de rastrear, su
+                        popularidad y su impacto en la cultura y la gastronomía son indudables.</p>
+                    <br>
+                </article>
+                <a href="#sec2">Siguiente</a>
             </div>
+            <img src="../img/coctel_2.jpg" alt="" srcset="">
+
         </section>
-        <article class="texto-historia2">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis necessitatibus repudiandae nesciunt
-                odio, excepturi aspernatur quasi incidunt voluptates magni magnam porro voluptatem repellendus esse ut
-                et explicabo molestiae modi alias.</p>
-        </article>
-    </main>
-    <footer>
-        <div>
-            <h2>Contenido</h2>
-            <ul>
-                <li>Inicio</li>
-                <li>Cocteles
-                    <ul>
-                        <li>Lista</li>
-                        <li>Sitios Bogotá</li>
-                        <li>Historia</li>
-                    </ul>
-                </li>
-                <li>Contactenos</li>
-            </ul>
-            <h2>Nuestras Redes</h2>
+        <section id="sec3" class="contenidoHistoria">
+            <div class="contenedorTexto">
+                <h2>Otras cosas interesantes</h2>
+                <article>
+                    <p><b>Prohibición y la era de los speakeasies:</b> Se trata de cómo la época de la Ley Seca en
+                        Estados
+                        Unidos
+                        (1920-1933) influyó en la cultura de los cócteles y en la creación de nuevas bebidas,
+                        especialmente
+                        en
+                        los "speakeasies" (bares clandestinos).</p>
+                    <br>
+                    <p>
+                        <b>Técnicas de preparación: </b> Se trata de incluir información sobre las diferentes técnicas
+                        que se
+                        utilizan
+                        para preparar los cócteles, como el "shaking" (agitar), el "stirring" (remover) y el "muddling"
+                        (machacar).
+                    </p>
+                    <a href="#bannerHistoria">Volver</a>
+                </article>
+
+            </div>
+            <img src="../img/sheake.gif" alt="">
+        </section>
+        <section id="sec2" class="contenidoHistoria">
+            <article class="textoHistoria2">
+                <div class="contenedorTexto">
+                    <h2>Cócteles famosos:</h2>
+                    <!-- <p>
+                        Algunos de los cócteles más icónicos de la historia, como el
+                        Martini, el Manhattan, el Daiquiri, el Old Fashioned o el Margarita, entre otros.
+                    </p> -->
+
+                    <p>
+                        <b>Martini:</b> El Martini es uno de los cócteles más famosos del mundo. Se cree que se originó
+                        en la
+                        década de
+                        1860 en San Francisco, California. Durante la década de 1950, el Martini se convirtió en la
+                        bebida
+                        favorita de los ejecutivos de negocios y los anfitriones de fiestas elegantes. En la actualidad,
+                        el
+                        Martini sigue siendo un clásico y se ha convertido en una bebida icónica de la cultura popular.
+                    </p>
+                    <br>
+                    <p>
+                        <b>Manhattan:</b> El Manhattan es otro cóctel clásico que se remonta a la década de 1870.
+                        Durante la
+                        época
+                        de
+                        la Ley Seca en Estados Unidos, el Manhattan se convirtió en una bebida popular en los
+                        speakeasies.
+                        En
+                        los años 50 y 60, el Manhattan experimentó un resurgimiento gracias a la popularidad de la
+                        cultura
+                        del
+                        "Mad Men". En la actualidad, el Manhattan sigue siendo un cóctel clásico y se puede encontrar en
+                        los
+                        menús de muchos bares y restaurantes de todo el mundo.
+                    </p>
+                    <br>
+                    <p>
+                        <b>Daiquiri:</b> El Daiquiri es un cóctel refrescante que se originó en Cuba en la década de
+                        1890. En
+                        la
+                        década
+                        de 1940, el Daiquiri se convirtió en una bebida popular entre las celebridades y las élites de
+                        Hollywood. En la actualidad, el Daiquiri sigue siendo una bebida popular en todo el mundo y se
+                        pueden
+                        encontrar muchas variaciones del cóctel original.
+                    </p>
+                    <br>
+                    <p>
+                        <b>Old Fashioned:</b> El Old Fashioned es un cóctel que se remonta al siglo XIX. Durante la
+                        década de
+                        1960,
+                        el
+                        Old Fashioned se convirtió en la bebida preferida de Don Draper, el personaje principal de la
+                        serie
+                        "Mad
+                        Men". En la actualidad, el Old Fashioned ha experimentado un resurgimiento en popularidad, y se
+                        puede
+                        encontrar en muchos menús de bares y restaurantes de todo el mundo.
+                    </p>
+                    <br>
+                    <p>
+                        <b>Margarita: </b> El Margarita es un cóctel clásico de la cultura mexicana que se originó en la
+                        década
+                        de
+                        1930.
+                        Durante la década de 1950, el Margarita se convirtió en una bebida popular en los bares de
+                        California.
+                        En la actualidad, el Margarita sigue siendo una bebida popular en todo el mundo y se pueden
+                        encontrar
+                        muchas variaciones del cóctel original.
+                    </p>
+
+                </div>
+                <a href="#sec3">Siguiente</a>
+            </article>
+            <img src="../img/coctel_3.jpg" alt="" srcset="">
             <div>
-                <img src="" alt="Logo - Instagram">
-                <img src="" alt="Logo - Facebook">
-                <img src="" alt="Logo - Whatsapp">
+
+
+                <!-- <img src="../img/cocteles-banner-inicio.jpg" alt="" srcset=""> -->
+
+            </div>
+
+        </section>
+
+    </main>
+    <footer class="">
+        <div class="contenedorMenuFooter">
+            <div class="logoFooter">
+                <img class="imgLogoFooter" src="../img/Logo-12.svg" alt="Logo">
+            </div>
+            <div class="menuFooter">
+                <ul class="contentedorListaFooter">
+                    <li> <a class="listaFooter" href="#">Inicio</a> </li>
+                    <li><a class="listaFooter" href="">Cocteles</a>
+                        <ul class="contenedorSubListaFooter">
+                            <li> <a class="subListaFooter" href="../Paginas/lista.html">Lista</a></li>
+                            <li> <a class="subListaFooter" href="../Paginas/sitiosBogota.html">Sitios Bogota</a></li>
+                            <li> <a class="subListaFooter" href="../Paginas/historia.html">Historia</a></li>
+                        </ul>
+                    </li>
+                    <li> <a class="listaFooter" href="../Paginas/contactenos.html">Contactenos</a> </li>
+                </ul>
+                <div class="listaRedes">
+                    <div><img class="red" src="../img/instagram-2.svg" alt="Instagram"></div>
+                    <div><img class="red" src="../img/facebook.svg" alt="Facebook"></div>
+                    <div><img class="red" src="../img/whatsapp.svg" alt="Whatsapp"></div>
+                </div>
             </div>
         </div>
-        <div>
-            <img src="" alt="imagen-Cocteles">
-        </div>
+        <div class="imagenFooter"></div>
     </footer>
 </body>
 
