@@ -37,7 +37,13 @@
   list-style: none;
   flex-direction: row;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   margin-top: 30px;
+}
+.barraNav nav ul li .opcionesResp {
+  display: none;
+  width: 0%;
+  margin: 1px;
 }
 .barraNav nav ul li a {
   text-decoration: none;
@@ -79,6 +85,14 @@
   background-color: #2b273d;
 }
 
+@media (max-width: 525px) {
+  .barraNav nav ul li ul {
+    display: none;
+  }
+  nav ul li ul {
+    display: none;
+  }
+}
 .bannerInicio {
   height: 100vh;
   position: relative;
@@ -1411,7 +1425,6 @@ footer .imagenFooter {
   }
   .barraNav nav ul {
     margin-top: 0%;
-    justify-content: center;
   }
   .barraNav div {
     margin-top: 0%;

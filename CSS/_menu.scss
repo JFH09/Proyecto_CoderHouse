@@ -33,14 +33,15 @@
 			display: flex;
 			list-style: none;
 			flex-direction: row;
-			// justify-content: space-evenly;
-			justify-content: space-around;
+			justify-content: space-evenly;
+			// justify-content: space-around;
     		flex-wrap: wrap;
 			margin-top: 30px;   
 			li {
 				.opcionesResp{
 					display: none;
 					width: 0%;
+					margin: 1px;
 				}
 				a{
 					text-decoration: none;
