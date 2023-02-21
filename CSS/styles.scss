@@ -471,7 +471,7 @@ footer{
     main{
         grid-gap: 2%;
         height: 365vh; //520px
-        
+        margin-top: 12%;
         .seccionInfo{
             height: 60vh;
             div:nth-child(2){
@@ -773,6 +773,7 @@ footer{
     }
 
     main{
+        margin-top: 20%;
         .seccionInfo{
             div:nth-child(2){
                 font-size: x-large;

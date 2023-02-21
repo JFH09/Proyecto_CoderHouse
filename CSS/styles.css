@@ -463,14 +463,10 @@ html {
 
 .btnBanner {
   color: #fff;
-}
-
-.btnBanner2 {
-  color: #fff;
   position: relative;
   justify-self: center;
   align-self: center;
-  top: 45%;
+  top: -33%;
 }
 
 .contenedorHistoria {
@@ -478,6 +474,7 @@ html {
   color: black;
   margin: 0;
   display: block;
+  height: auto;
 }
 
 .contenidoHistoria {
@@ -493,12 +490,13 @@ html {
   margin-bottom: 5px;
 }
 .contenidoHistoria p {
-  font-weight: 8px;
+  font-weight: 7px;
   margin-bottom: 3px;
+  text-align: justify;
 }
 .contenidoHistoria img {
-  width: 100%;
-  height: 60%;
+  width: 50%;
+  height: 50%;
 }
 .contenidoHistoria a {
   display: inline-block;
@@ -510,44 +508,147 @@ html {
   border: 1px solid black;
   border-radius: 50px;
   background-color: #fff;
+  margin-bottom: 5%;
+}
+.contenidoHistoria article {
+  margin-right: 5%;
 }
 
-section:nth-child(2) img {
-  width: 45%;
-}
-
-section:nth-child(2) {
+.contenidoHistoria:nth-child(2) {
   margin-top: 0%;
 }
-section:nth-child(2) img {
-  width: 100%;
+.contenidoHistoria:nth-child(2) img {
+  width: 45%;
   -o-object-fit: contain;
      object-fit: contain;
 }
+.contenidoHistoria:nth-child(3) img {
+  width: 45%;
+}
+.contenidoHistoria:nth-child(3) article {
+  margin-right: 2%;
+}
 
-section:nth-child(1) {
+.contenidoHistoria:nth-child(1) {
   color: #fff;
   background: #0f0c29;
   background: linear-gradient(to right, #24243e, #242150, #0f0c29);
+  margin-top: 5%;
 }
 
-section:nth-child(2) {
+.contenidoHistoria:nth-child(2) {
   color: #fff;
   background-image: linear-gradient(to top, #f3c4a4 0%, #dba884 100%);
 }
-section:nth-child(2) a {
+.contenidoHistoria:nth-child(2) a {
   border: #fff;
 }
-section:nth-child(2) img {
-  height: 100%;
+.contenidoHistoria:nth-child(2) img {
+  height: 85%;
 }
 
-section:nth-child(3) {
+.contenidoHistoria:nth-child(3) {
   color: #fff;
   background-image: url("../img/fondo2.jpg");
   background-size: auto;
 }
+.contenidoHistoria:nth-child(3) article {
+  font-size: 13px;
+}
 
+@media (max-width: 1018px) {
+  .contenedorHistoria {
+    height: auto;
+  }
+  .contenedorHistoria .contenidoHistoria:nth-child(1) div:nth-child(1) {
+    margin-top: 80px;
+  }
+  .contenedorHistoria article {
+    font-size: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .contenidoHistoria {
+    height: 100vh;
+  }
+  .contenidoHistoria:nth-child(1) {
+    height: auto;
+  }
+  .contenidoHistoria:nth-child(1) img {
+    width: 50%;
+  }
+  .contenidoHistoria:nth-child(3) {
+    height: auto;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+  }
+  .contenidoHistoria:nth-child(3) article {
+    font-size: 10px;
+  }
+  .contenidoHistoria:nth-child(3) img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 240px;
+  }
+  .contenidoHistoria h2 {
+    font-size: 27px;
+    font-weight: 300;
+    margin-bottom: 5px;
+  }
+  .contenidoHistoria article {
+    font-size: 12px;
+    margin-right: 14px;
+  }
+  .contenidoHistoria p {
+    font-weight: 4px;
+    margin-bottom: 3px;
+  }
+  .contenidoHistoria img {
+    width: 100%;
+    height: 34%;
+  }
+  .contenidoHistoria a {
+    display: inline-block;
+    padding: 5px 0;
+    color: black;
+    text-decoration: none;
+    width: 100px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 50px;
+    background-color: #fff;
+  }
+}
+@media (max-width: 525px) {
+  .btnBanner {
+    top: -20%;
+  }
+  .contenidoHistoria:nth-child(1) {
+    flex-direction: column-reverse;
+    margin-top: 0%;
+  }
+  .contenidoHistoria:nth-child(1) div:nth-child(1) {
+    margin-top: 0%;
+  }
+  .contenidoHistoria:nth-child(1) img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    margin-top: 5%;
+  }
+  .contenedorHistoria .contenidoHistoria:nth-child(1) div:nth-child(1) {
+    margin-top: 3%;
+  }
+  .contenedorHistoria .contenidoHistoria:nth-child(1) img {
+    margin-top: 5%;
+  }
+}
+@media (max-width: 360px) {
+  .btnBanner {
+    top: -7%;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -973,6 +1074,7 @@ footer .imagenFooter {
   main {
     grid-gap: 2%;
     height: 365vh;
+    margin-top: 12%;
   }
   main .seccionInfo {
     height: 60vh;
@@ -1209,6 +1311,9 @@ footer .imagenFooter {
   .seccionInfo2 :nth-child(3) {
     grid-row: 4/8;
     grid-column: 2/6;
+  }
+  main {
+    margin-top: 20%;
   }
   main .seccionInfo div:nth-child(2) {
     font-size: x-large;
