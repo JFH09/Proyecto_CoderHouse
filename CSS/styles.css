@@ -797,6 +797,11 @@ html {
   border-radius: 20px;
 }
 
+@media (max-width: 1440px) {
+  .mainSitios {
+    height: 414vh;
+  }
+}
 @media (max-width: 768px) {
   .contenedorCardsSitio {
     flex-direction: column;
@@ -804,6 +809,19 @@ html {
   }
   .contenedorCardsSitio .cardSitio {
     width: 90%;
+  }
+  .mainSitios {
+    height: 554vh;
+  }
+}
+@media (max-width: 525px) {
+  .mainSitios {
+    height: 626vh;
+  }
+}
+@media (max-width: 360px) {
+  .mainSitios {
+    height: 623vh;
   }
 }
 * {
@@ -1124,6 +1142,10 @@ footer .imagenFooter {
   background-color: rgba(0, 0, 0, 0.603);
   color: white;
   border: none;
+}
+.btnTransparenciaOscuro a {
+  color: white;
+  text-decoration: none;
 }
 
 .container-main {

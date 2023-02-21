@@ -72,7 +72,11 @@
     }
 
 }
-
+@media (max-width:1440px) {
+    .mainSitios{
+        height: 414vh;
+    }
+}
 @media (max-width:768px) {
     .contenedorCardsSitio{
         flex-direction: column;
@@ -81,5 +85,19 @@
             width: 90%;
             
         }
+    }
+    .mainSitios{
+        height: 554vh;
+    }
+}
+
+@media (max-width:525px) {
+    .mainSitios{
+        height: 626vh;
+    }
+}
+@media (max-width:360px) {
+    .mainSitios{
+        height: 623vh;
     }
 }
