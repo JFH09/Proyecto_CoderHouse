@@ -86,8 +86,9 @@
 }
 
 @media (max-width: 525px) {
-  .barraNav nav ul li ul {
-    display: none;
+  .barraNav nav ul li {
+    margin-left: 3px;
+    margin-right: 3px;
   }
   nav ul li ul {
     display: none;
