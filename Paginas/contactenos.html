@@ -15,7 +15,7 @@
 </head>
 
 <body class="bg-black">
-    <header class="container-header">
+    <header class="headerContactenos">
         <nav class="navbar navbar-expand-lg bg-dark fixed-top" style="    background: #1F1C2C;  
         background: -webkit-linear-gradient(to right, #2b273d, #2b273d);  
         background: linear-gradient(to right, #2d293d, #2b273d); 
@@ -64,8 +64,9 @@
 
     </header>
 
-    <main class="container-main">
-        <section class="  ">
+    <main class="mainContactenos">
+
+        <section class="seccion1">
             <!--style="margin-top: 10%;"-->
 
             <div id="carouselExampleDark" class="carousel carousel-dark slide">
@@ -79,21 +80,24 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="10000">
-                        <img src="../img/atencion-cliente.jpg" class="d-block w-100" alt="..." style="opacity: 75%;">
+                        <img class="imagenBannerCont" src="../img/haciendo-coctel.gif" class="d-block w-100" alt="..."
+                            style="opacity: 75%;">
                         <div class="carousel-caption d-none d-md-block text-white">
                             <h5>Contactanos</h5>
                             <p>Habla con un asesor experto, puedes aparecer en la pagina y obtener mas visitas</p>
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="2000">
-                        <img src="../img/contact.jpg" class="d-block w-100" alt="..." style="opacity: 75%;">
+                        <img class="imagenBannerCont" src="../img/atencion-cliente.jpg" class="d-block w-100" alt="..."
+                            style="opacity: 75%;">
                         <div class="carousel-caption d-none d-md-block text-white">
                             <h5>Damos la las mejores recomendaciones en cocteles</h5>
                             <p>PSomos nuevos en el mercado, contactanos y conoce mas sobre nosotros</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="../img/cocteles-banner-2.jpg" class="d-block w-100" alt="..." style="opacity: 75%;">
+                        <img class="imagenBannerCont" src="../img/cocteles-banner-2.jpg" class="d-block w-100" alt="..."
+                            style="opacity: 75%;">
                         <div class="carousel-caption d-none d-md-block text-white">
                             <h5>Todo sobre Cocteles</h5>
                             <p>Conoce como hacer los cocteles mas populares.</p>
@@ -165,57 +169,33 @@
             </div>
         </section>
     </main>
-
-    <footer class="bg-image " style="background-image: linear-gradient(#2b273d, #2b273d83),  url('../img/imagen-footer-1.jpg');
-    background-size: 50%;
-    background-position: right;
-    background-repeat: no-repeat;
-    background-color: #2b273d;
-    width: 100%;
-    height: 100%;
-    ">
-        <div class="bg-indigo col-4">
+    <footer class="">
+        <div class="contenedorMenuFooter">
             <div class="logoFooter">
-                <img class="imgLogoFooter" src="../img/Logo-12.svg" alt="Logo"
-                    style="width: 50%; margin-top: 3%; margin-left: 3%;">
+                <img class="imgLogoFooter" src="../img/Logo-12.svg" alt="Logo">
             </div>
             <div class="menuFooter">
-                <ul class="contentedorListaFooter col-6 " style="list-style: none;">
-                    <li style="list-style: none;"> <a class="listaFooter text-white " href="../index.html"
-                            style=" text-decoration: none;">Inicio</a> </li>
-                    <li><a class="listaFooter text-white" style=" text-decoration: none;">Cocteles</a>
-                        <ul class="contenedorSubListaFooter" style="list-style: none; text-decoration: none;">
-                            <li> <a class="subListaFooter text-white" href="../Paginas/lista.html"
-                                    style="text-decoration: none;">Lista</a></li>
-                            <li> <a class="subListaFooter text-white " href="./Paginas/sitiosBogota.html"
-                                    style=" text-decoration: none;">Sitios
-                                    Bogota</a></li>
-                            <li> <a class="subListaFooter text-white" href="./Paginas/historia.html"
-                                    style=" text-decoration: none;">Historia</a></li>
+                <ul class="contentedorListaFooter">
+                    <li> <a class="listaFooter" href="#">Inicio</a> </li>
+                    <li><a class="listaFooter" href="">Cocteles</a>
+                        <ul class="contenedorSubListaFooter">
+                            <li> <a class="subListaFooter" href="../Paginas/lista.html">Lista</a></li>
+                            <li> <a class="subListaFooter" href="../Paginas/sitiosBogota.html">Sitios Bogota</a></li>
+                            <li> <a class="subListaFooter" href="../Paginas/historia.html">Historia</a></li>
                         </ul>
                     </li>
-                    <li> <a class="listaFooter text-white" href="#" style=" text-decoration: none;">Contactenos</a>
-                    </li>
+                    <li> <a class="listaFooter" href="../Paginas/contactenos.html">Contactenos</a> </li>
                 </ul>
-                <div class="listaRedes col-6" style="    
-                display: flex;
-                flex-flow: row;
-                margin-top: 3%;
-                margin-left: 10%;
-                width: 50%;
-                height: 100%;">
-                    <div><img class="" src="../img/instagram-2.svg" alt="Instagram" style="width: 45%;"></div>
-                    <div><img class="" src="../img/facebook.svg" alt="Facebook" style="width: 45%;"></div>
-                    <div><img class="" src="../img/whatsapp.svg" alt="Whatsapp" style="width: 45%;"></div>
+                <div class="listaRedes">
+                    <div><img class="red" src="../img/instagram-2.svg" alt="Instagram"></div>
+                    <div><img class="red" src="../img/facebook.svg" alt="Facebook"></div>
+                    <div><img class="red" src="../img/whatsapp.svg" alt="Whatsapp"></div>
                 </div>
             </div>
         </div>
-        <!-- <div class="bg-image" style="background-image: url('./img/imagen-footer-1.jpg');
-            background-size: cover;
-            width: 100%;
-            height: 100%;
-            "></div> -->
+        <div class="imagenFooter"></div>
     </footer>
+
 
 </body>
 
