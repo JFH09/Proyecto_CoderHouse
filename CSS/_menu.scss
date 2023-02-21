@@ -33,9 +33,15 @@
 			display: flex;
 			list-style: none;
 			flex-direction: row;
-			justify-content: space-evenly;
+			// justify-content: space-evenly;
+			justify-content: space-around;
+    		flex-wrap: wrap;
 			margin-top: 30px;   
 			li {
+				.opcionesResp{
+					display: none;
+					width: 0%;
+				}
 				a{
 					text-decoration: none;
 					color: rgb(255, 255, 255);
@@ -80,5 +86,24 @@
 				}
 			}	
 		}
+	}
+}
+
+@media (max-width:525px) {
+	.barraNav{
+		nav{
+			ul{
+				li{
+					ul{
+						display: none;
+					}
+				}
+			}
+		}
+	} 
+
+		nav ul li ul {
+		display: none;
+
 	}
 }
