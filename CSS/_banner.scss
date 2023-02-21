@@ -8,6 +8,7 @@
     background-image: url($bannerImagen); 
     background-size: cover;
     background-attachment: fixed;
+    background-position-x: center;
     // filter: brightness($brightness);
     opacity: $opacidad;
     div{
@@ -41,5 +42,10 @@
 
 .bannerHistoria{
     @include banner('../img/fondoHistoria.gif', 'Conoce un poco de la historia de los cocteles con este pequeño resumen',70%);
+    
+}
+
+.bannerSitiosBogota{
+    @include banner('../img/sitio-amigos.gif', 'Donde tomarme un buen coctel en Bogotá D.C.',70%);
     
 }

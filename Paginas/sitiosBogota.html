@@ -5,66 +5,184 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sitios Bogotá</title>
 
+    <link rel="stylesheet" href="../CSS/styles.css">
 </head>
 
 <body>
-    <header class="encabezado">
-        <div>
-            <img src="" alt="Logo">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li>Cocteles
-                    <ul>
-                        <li><a href="./lista.html">Lista</a> </li>
-                        <li><a href="#">Sitios Bogotá</a> </li>
-                        <li><a href="./historia.html">Historia</a></li>
-                    </ul>
-                </li>
-                <li><a href="./contactenos.html">Contactenos</a></li>
-            </ul>
-        </nav>
-        <div class="bannerSitiosBogota">
-            <div class="imagenBanner">
-                <img src="../Imagenes/imagen-gris-una-imagen.jpg" alt="sitiosEnBogota">
+    <video class="videoBody" src="../videos/fondo10.mp4" autoplay="true" muted="true" loop="true"
+        poster="./img/galeria-coctel-1.jpg" alt="video-bebiendo-buen-coctel"></video>
+    <header>
+        <div class="barraNav">
+            <div class="logo">
+                <img class="imgLogo" src="../img/Logo-12.svg" alt="Logo">
             </div>
-            <div class="textoBanner">
-                <h2>Donde tomarme un buen coctel en Bogotá D.C.</h2>
+            <nav class="navBar">
+                <ul class="menu">
+                    <li> <a class="lista" href="../index.html">Inicio</a> </li>
+                    <li><a class="lista" href="">Cocteles</a>
+                        <ul class="contenedorSubLista">
+                            <li><a class="subLista">Cocteles</a></li>
+                            <li> <a class="subLista" href="./lista.html">Lista</a></li>
+                            <li> <a class="subLista" href="./sitiosBogota.html">Sitios Bogota</a></li>
+                            <li> <a class="subLista" href="./historia.html">Historia</a></li>
+                        </ul>
+                    </li>
+                    <li> <a class="lista" href="./contactenos.html">Contactenos</a> </li>
+                </ul>
+            </nav>
+        </div>
+        <div id="bannerSitios" class="bannerSitiosBogota">
+            <div class="textoBanner ">
+                <span class="textoBanner1"> </span>
+
             </div>
         </div>
+
     </header>
 
-    <main>
-        <section class="contenedorCards">
-            <div class="card">
-                <div class="columna1Card">
-                    <div>
-                        <h3>Titulo Lugar recomendado</h3>
-                    </div>
-                    <div class="textoCard">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima culpa ullam ipsam sit beatae,
-                            ipsa nemo doloribus dicta, quia corporis iusto laudantium recusandae enim incidunt,
-                            voluptates quasi tempora dignissimos non!</p>
-                    </div>
-                    <div class="MapaCard">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15905.64279875458!2d-74.0547678!3d4.6984934!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8d8b64405cdf64bb!2sSeratta%20Gourmand%20Market%20114!5e0!3m2!1ses-419!2sco!4v1674177883674!5m2!1ses-419!2sco"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-
+    <main class="mainSitios">
+        <section class="contenedorCardsSitio">
+            <div class="cardSitio">
+                <div class="infoSitio">
+                    <h2>Seratta</h2>
+                    <h3>carrera 45 #114- 44</h3>
+                    <p>
+                        En este lugar te conduciran por el mundo de la Ginebra y podrás experimentar diferentes
+                        formas
+                        de extraer sabores de manera rapida y natural. Juntos preparan infusiones mientras hablan de
+                        historia experiencias de sus origenes. 3 cocteles por persona + maridaje.
+                    </p>
+                    <p>Puedes reservar y conocer mas informacion sobre este lugar en su sitio web
+                    </p>
+                    <a href="https://www.restauranteseratta.com/">https://www.restauranteseratta.com/</a>
                 </div>
-                <div class="imagenCard">
-                    <img src="../Imagenes/imagen-gris-una-imagen.jpg" alt="imagen-sitioBogota-1">
+                <img src="https://restaurante.guide/wp-content/uploads/2020/01/seratta-portada.jpg" alt="">
+                <div class="mapaSitio">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15905.64279875458!2d-74.0547678!3d4.6984934!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8d8b64405cdf64bb!2sSeratta%20Gourmand%20Market%20114!5e0!3m2!1ses-419!2sco!4v1676950260072!5m2!1ses-419!2sco"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
-            <!--Se crearan la cantidad de card tantos restaurantes se vayan a recomendar-->
-
+            <div class="cardSitio">
+                <div class="infoSitio">
+                    <h2>El Mono Bandido</h2>
+                    <h3>Zona T - La 93 - Quinta - Chapi - Cll127</h3>
+                    <p>
+                        En este lugar te conduciran por el mundo de una excelente vibra, todo por un lugar comodo para
+                        tomarte unos buenos tragos.
+                        Reservas, Asientos al aire libre, Asiento, Sirve alcohol, Servicio de mesa, Bar completo, Vino y
+                        cerveza, Acepta tarjetas de crédito
+                    </p>
+                    <p>Puedes reservar y conocer mas informacion sobre este lugar en su sitio web
+                    </p>
+                    <a href="https://www.elmonobandido.com/">https://www.elmonobandido.com/</a>
+                </div>
+                <img src="https://media-cdn.tripadvisor.com/media/photo-w/14/9b/10/f5/great-atmosphere.jpg" alt="">
+                <div class="mapaSitio">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15906.340155347938!2d-74.0542579!3d4.6678292!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x42faca29974106ee!2sEl%20Mono%20Bandido%20Zona%20T!5e0!3m2!1ses-419!2sco!4v1676952450427!5m2!1ses-419!2sco"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="cardSitio">
+                <div class="infoSitio">
+                    <h2>Huerta </h2>
+                    <h3>carrera 12a #83-64</h3>
+                    <p>
+                        Se enfocan en ofrecer experiencias únicas utilizando una variedad de sabores que resalten el
+                        espíritu, la cultura local, siendo lo más autosuficientes posibles y cuidando el medio ambiente.
+                        Se caracterizan por un concepto único, aprovechando los mejores espíritus y más frescos
+                        ingredientes de nuestra región, para elaborar nuestros insumos usando procesos artesanales.
+                    </p>
+                    <p>Puedes reservar y conocer mas informacion sobre este lugar en:
+                    </p>
+                    <a href="https://linktr.ee/huertabarbogota">https://linktr.ee/huertabarbogota</a>
+                </div>
+                <img src="https://lh3.googleusercontent.com/p/AF1QipMfippj08VkybnT4VhD6_F2fvG47MWluKijPthE=s680-w680-h510"
+                    alt="">
+                <div class="mapaSitio">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15906.337992853081!2d-74.0534896!3d4.6679246!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3929a98aeb35fa4a!2sHuerta%20Cocteler%C3%ADa%20Artesanal!5e0!3m2!1ses-419!2sco!4v1676953556045!5m2!1ses-419!2sco"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="cardSitio">
+                <div class="infoSitio">
+                    <h2>Isola</h2>
+                    <h3>Cra. 12a #83 - 30, Bogotá</h3>
+                    <p>
+                        Ademas de ser una Trattoria, se destacan por su variedad de cocteleria, simplemente tienes que
+                        ir para describir el excelente lugar que es.
+                    </p>
+                    <p>Puedes reservar y conocer mas informacion sobre este lugar en su sitio web
+                    </p>
+                    <a href="https://www.isolatrattoriabar.com/">https://www.isolatrattoriabar.com/</a>
+                </div>
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/8f/52/aa/nuestra-terraza.jpg?w=800&h=600&s=1"
+                    alt="">
+                <div class="mapaSitio">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15906.345008333617!2d-74.0538122!3d4.6676151!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfffee39fcc32241d!2sIsola%20Trattoria%20Bar!5e0!3m2!1ses-419!2sco!4v1676953839060!5m2!1ses-419!2sco"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="cardSitio">
+                <div class="infoSitio">
+                    <h2>Cantina La 15 </h2>
+                    <h3>Carrera 13 #83-57 Zona T</h3>
+                    <p>
+                        Es de los mejores lugares con ambiente musical y bebidas que te puedes encontrar en Bogotá, su
+                        excelente servicio lo hace ser destacado entre los demas, de igual forma, sus shows en vivo y
+                        obviamente sus buenos cocteles.
+                    </p>
+                    <p>Puedes reservar y conocer mas informacion sobre este lugar en su sitio web
+                    </p>
+                    <a href="https://www.cantinala15.com/">https://www.cantinala15.com/</a>
+                </div>
+                <img src="https://media-cdn.tripadvisor.com/media/photo-w/26/f4/bc/07/los-mejores-espacios.jpg
+                " alt="">
+                <div class="mapaSitio">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15906.32652001235!2d-74.0543144!3d4.6684307!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc02a678ae31c19e1!2sCantina%20La%2015%20Bogot%C3%A1!5e0!3m2!1ses-419!2sco!4v1676954334709!5m2!1ses-419!2sco"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
         </section>
     </main>
+
+    <footer class="">
+        <div class="contenedorMenuFooter">
+            <div class="logoFooter">
+                <img class="imgLogoFooter" src="../img/Logo-12.svg" alt="Logo">
+            </div>
+            <div class="menuFooter">
+                <ul class="contentedorListaFooter">
+                    <li> <a class="listaFooter" href="#">Inicio</a> </li>
+                    <li><a class="listaFooter" href="">Cocteles</a>
+                        <ul class="contenedorSubListaFooter">
+                            <li> <a class="subListaFooter" href="../Paginas/lista.html">Lista</a></li>
+                            <li> <a class="subListaFooter" href="../Paginas/sitiosBogota.html">Sitios Bogota</a></li>
+                            <li> <a class="subListaFooter" href="../Paginas/historia.html">Historia</a></li>
+                        </ul>
+                    </li>
+                    <li> <a class="listaFooter" href="../Paginas/contactenos.html">Contactenos</a> </li>
+                </ul>
+                <div class="listaRedes">
+                    <div><img class="red" src="../img/instagram-2.svg" alt="Instagram"></div>
+                    <div><img class="red" src="../img/facebook.svg" alt="Facebook"></div>
+                    <div><img class="red" src="../img/whatsapp.svg" alt="Whatsapp"></div>
+                </div>
+            </div>
+        </div>
+        <div class="imagenFooter"></div>
+    </footer>
 </body>
 
 </html>
